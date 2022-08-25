@@ -3,7 +3,7 @@
 ## Database Schema Design
 
 
-![image](https://drive.google.com/uc?export=view&id=1dujAWqy7q10HXfgZ92pF7Fjvxb0cnnqD)
+![Screen Shot 2022-08-24 at 2 43 28 PM](https://user-images.githubusercontent.com/102837663/186706145-4809f1cf-5107-41f0-b364-86c605198b99.png)
 
 
 ## API Documentation
