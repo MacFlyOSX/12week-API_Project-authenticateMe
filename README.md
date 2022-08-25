@@ -2,7 +2,9 @@
 
 ## Database Schema Design
 
-`<insert database schema design here>`
+
+![image](https://drive.google.com/uc?export=view&id=1dujAWqy7q10HXfgZ92pF7Fjvxb0cnnqD)
+
 
 ## API Documentation
 
