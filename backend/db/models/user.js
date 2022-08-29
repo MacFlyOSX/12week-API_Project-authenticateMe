@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
       const { id, username, email } = this; // context will be the User instance
       return { id, username, email };
     }
+    static associate(models) {
+      // define association here
+    }
     validatePassword(password) {
       return bcrypt.compareSync(password, this.hashedPassword.toString());
     }
@@ -38,21 +41,6 @@ module.exports = (sequelize, DataTypes) => {
         hashedPassword
       });
       return await User.scope('currentUser').findByPk(user.id);
-    }
-    static associate(models) {
-      User.belongsToMany(models.Event, {
-        through: 'Attendance',
-        foreignKey: 'userId',
-        otherKey: 'eventId'
-      });
-      User.belongsTo(models.Group, {
-        foreignKey: 'organizerId'
-      });
-      User.belongsToMany(models.Group, {
-        through: models.Membership,
-        foreignKey: 'userId',
-        otherKey: 'groupId'
-      });
     }
   };
 
